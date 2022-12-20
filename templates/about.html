@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{%block title%}<title> about </title>{% endblock %}
+
+{%block content%} 
+    <div class ="name"> <strong>Elmond B. Rivarez</strong> </div>
+    <div class = "myself"><p>I am a person that very eager to learn new things and very flexible I can do multitasking, analyzing the problem base on my skills and experience and can work under pressure.</p></div>
+    
+    <div class ="container">
+        <div class ="exp"> <h1>SKILLS</h1>
+        <div class="expd">
+            <ul> 
+            <li>Front-End Programming: HTML, CSS, Python, Javascript, Flask. </li>
+            <li>Back-End Programming: Python, Javascript, Json, Flask.</li>
+            <li>Databases: MySQL, DB</li>
+            <li>CSS frameworks: Bootstrap. </li>
+            <li>Responsive Web Design. </li>
+            <li>Version Control Systems: Git, GitHub.</li>
+            <li>API integration</li>
+            <li>Apache HTTP Server Configuration. </li>
+            <li>Time Management and Prioritization.</li>
+            <li>Communication and Interpersonal Skills.</li>
+            <li>Problem-Solving.</li>
+            <li>Agile and Predictive Project Management.</li>
+            <li>Proficiency using Microsoft Office suite.</li>
+           
+            </ul>
+        </div>        
+        </div>
+      
+        <div class ="skills"> <h1>WORK <br>HISTORY</H1>
+        </div>
+        <div class = "slist"> <h2> Junior Full-Stack Developer</h2>
+                        <h3> Webranes Corp. Q.C. Philippines</h3>
+                            <ul>
+                                <li>Frontend and backend application development based on the organization's requirements and needs.</li>
+                                <li>Working Closely with other team members to plan, design and develop robust solutions in a timely manner</li>
+                                <li>Modifying existing software to correct errors, upgrade interfaces and improve performance</li>
+                                <li>Monitoring of systems operation and users feedback for implementing improvements and solutions to failures.</li>
+                                <li>Researched and tracked new web technologies to enhance applications.</li>
+                                <li>Technical documentation of the developments for support, references, and reports.</li>
+                                <li>Evaluation of platforms and technologies during the feasibility study and planning stages of new systems.</li>
+                            </ul>        
+            <div class="image">
+                <image src="{{url_for('static',filename='images/exp1.png')}}">
+                </div>
+            <div class = "slist2"> <h2> Sales Area-Manager</h2>
+                        <h3> St. Augustine Publications Inc. Caloocan Philippines</h3>
+                            <ul>
+                                <li>Operational and financial responsibility for my region or territory</li>
+                                <li>Ensuring quality consistency across the region and increasing sales and profitability</li>
+                                <li>Created order application and filling system using Python</li>
+                                
+                            </ul>
+                            <div class="image">
+                                <image src="{{url_for('static',filename='images/exp2.png')}}">
+                                </div>
+        </div>
+        <div class= "line"> </div>
+        <div class= "circle"> </div>
+        <div class= "circle1"> </div>
+    </div>
+
+
+{% endblock %}

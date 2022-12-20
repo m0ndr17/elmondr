@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{%block title%}<title> contact </title>{% endblock %}
+{%block content%} 
+<div class = "profile">
+    <br> 
+     <div class = "cdetails">
+         <br>
+         <br>
+         <br>
+         <br><br><br>
+         <div class = "ctext">
+            <h1> Elmond B. Rivarez </h1>
+            <img src="{{url_for('static',filename='images/email.png')}}">
+            <p> elmondrivarez@gmail.com</p>
+            <img src="{{url_for('static',filename='images/phone.png')}}">
+            <p> +639565989177</p>   
+         </div>  
+     </div>
+     <image class = "display" src="{{url_for('static',filename='images/pic.jpg')}}">  
+ </div> 
+<div class="center">
+    <form method="post">
+    <div class = "txt_field">
+        <input type = "text" name="name"required>
+        <span></span>
+        <label> Name</label>
+    </div>
+    <div class = "txt_field">
+        <input type = "text" name="message" required>
+        <span></span>
+        <label> Message</label>
+    </div>
+    <div class = "txt_field">
+        <input type = "email" name="email" required>
+        <span></span>
+        <label> Emailaddress</label>
+    </div>
+    <input type = "submit" value = "Send">
+
+    </form>
+
+{% endblock %}
